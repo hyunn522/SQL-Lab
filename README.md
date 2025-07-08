@@ -2,11 +2,13 @@
 
 MySQL과 Oracle의 문법 실습을 위한 예제 스크립트이다.
 
-`.script` : 예제 테이블 생성을 위한 데이터 삽입 스크립트
+`01.emp_dept_mysql.sql`, `01.emp_dept_oracle.sql` : 예제 테이블 생성을 위한 데이터 삽입 스크립트
 
-`.script` : SQL문 예제 
+`01.select_mysql.sql`, `01.select_oracle.sql` : SQL문 예제 
 
 ## 📁 예제 테이블 구조
+
+<img width="629" alt="image" src="https://github.com/user-attachments/assets/9781656f-c2c1-46bd-8d9e-1297b3e5f8ff" />
 
 ## ❓ 추가한 문제
 
@@ -53,11 +55,11 @@ SELECT  d.DNAME "부서 명" ,AVG(sal)*12 AS "평균 연봉"
 
 ### Q4. 입사 연도별 평균 연봉
 
-`TO_CHAR(date, 'YYYY')`를 통해 Date 타입에서 연도만을 추출할 수 있다.
-
 ```
 SELECT TO_CHAR(hiredate,'YYYY') FROM emp;
 ```
+
+`TO_CHAR(date, 'YYYY')`를 통해 Date 타입에서 연도만을 추출할 수 있다.
 
 ```
 SELECT TO_CHAR(hiredate,'YYYY') AS "입사 연도", avg(sal)*12 AS "평균 연봉"
