@@ -19,11 +19,15 @@ MySQL과 Oracle의 문법 실습을 위한 예제 스크립트이다.
 > SELECT * FROM emp e JOIN dept d ON d.deptno = e.deptno;
 > ```
 
-### Q1. 급여에 따라 다음과 같이 등급을 나누어 조회하세요.
--- - 3000 이상: 'A'
--- - 2000 이상: 'B'
--- - 1000 이상: 'C'
--- - 1000 미만: 'D'
+### Q1. 급여에 따라 다음과 같이 등급을 나누어 조회하기
+
+> 3000 이상: 'A'
+> 
+> 2000 이상: 'B'
+> 
+> 1000 이상: 'C'
+> 
+> 1000 미만: 'D'
 
 ```
 select ename ,(
@@ -36,7 +40,11 @@ select ename ,(
     ) as 급여 from emp;
 ```
 
-### Q2. 본인 상사 이름 찾아오기
+✔️ 결과
+
+![image](https://github.com/user-attachments/assets/209c0b5a-66fd-4d3a-8b01-633ecd4944c3)
+
+### Q2. 본인 상사 이름 조회하기
 
 ```
 SELECT e.ename AS "사원 이름", g.ename AS "상사 이름"
@@ -44,7 +52,11 @@ SELECT e.ename AS "사원 이름", g.ename AS "상사 이름"
     JOIN emp g ON e.mgr= g.empno;
 ```
 
-### Q3. 부서당 연봉 평균
+✔️ 결과
+
+![image](https://github.com/user-attachments/assets/0d7ec729-225d-4488-8487-5cc2e0a2e29d)
+
+### Q3. 부서당 연봉 평균 조회하기
 
 ```
 SELECT  d.DNAME "부서 명" ,AVG(sal)*12 AS "평균 연봉"
@@ -53,7 +65,11 @@ SELECT  d.DNAME "부서 명" ,AVG(sal)*12 AS "평균 연봉"
   GROUP BY d.DNAME;
 ```
 
-### Q4. 입사 연도별 평균 연봉
+✔️ 결과
+
+![image](https://github.com/user-attachments/assets/968d934a-ebbd-4a63-b32a-8b8df8d9bfe9)
+
+### Q4. 입사 연도별 평균 연봉 조회하기
 
 ```
 SELECT TO_CHAR(hiredate,'YYYY') FROM emp;
@@ -66,3 +82,7 @@ SELECT TO_CHAR(hiredate,'YYYY') AS "입사 연도", avg(sal)*12 AS "평균 연�
 FROM emp
 GROUP BY TO_CHAR(hiredate,'YYYY');
 ```
+
+✔️ 결과
+
+![image](https://github.com/user-attachments/assets/80a63644-36fe-4a47-bf07-1aeee1e1b6ca)
