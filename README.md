@@ -58,7 +58,7 @@ SELECT e.ename AS "사원 이름", g.ename AS "상사 이름"
 
 ![image](https://github.com/user-attachments/assets/0d7ec729-225d-4488-8487-5cc2e0a2e29d)
 
-### Q3. 부서당 연봉 평균 조회하기
+### Q3. 부서당 평균 연봉봉 조회하기
 
 ```
 SELECT  d.DNAME "부서 명" ,AVG(sal)*12 AS "평균 연봉"
