@@ -61,7 +61,7 @@ SELECT e.ename AS "사원 이름", g.ename AS "상사 이름"
 ### Q3. 부서당 평균 연봉 조회하기
 
 ```
-SELECT  d.DNAME "부서 명" ,AVG(sal)*12 AS "평균 연봉"
+SELECT  d.DNAME "부서 명" ,AVG(sal * 12) AS "평균 연봉"
   FROM emp e
     JOIN dept d ON e.deptno = d.deptno
   GROUP BY d.DNAME;
@@ -80,7 +80,7 @@ SELECT TO_CHAR(hiredate,'YYYY') FROM emp;
 `TO_CHAR(date, 'YYYY')`를 통해 Date 타입에서 연도만을 추출할 수 있다.
 
 ```
-SELECT TO_CHAR(hiredate,'YYYY') AS "입사 연도", avg(sal)*12 AS "평균 연봉"
+SELECT TO_CHAR(hiredate,'YYYY') AS "입사 연도", avg(sal * 12) AS "평균 연봉"
 FROM emp
 GROUP BY TO_CHAR(hiredate,'YYYY');
 ```
