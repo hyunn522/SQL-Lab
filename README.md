@@ -8,7 +8,7 @@ SQL문에서 기본적으로 사용되는 `SELECT`, `WHERE`, `ORDER BY` 절에 �
 
 | 정서현 | 최홍석 | 홍윤기 |
 | :---: | :---: | :---: |
-| <img width="120px" src="https://github.com/user-attachments/assets/5ab2d270-ed42-4a31-8d07-9d14ecf6c98d"/>   | <img width="120px" src="https://github.com/user-attachments/assets/86fe4892-da4d-474d-b793-c89f4756b0f6"/> | <img width="120px" src="https://github.com/user-attachments/assets/8a15a7e7-6fff-45f3-903d-b82a4ec3c2bf"/> | <img width="120px" src="https://github.com/user-attachments/assets/029daed9-0514-45ed-98ed-ed4ec8b3384d"/> |
+| <img width="120px" src="https://github.com/user-attachments/assets/5ab2d270-ed42-4a31-8d07-9d14ecf6c98d"/>   | <img width="120px" src="https://github.com/user-attachments/assets/86fe4892-da4d-474d-b793-c89f4756b0f6"/> | <img width="120px" src="https://github.com/user-attachments/assets/8a15a7e7-6fff-45f3-903d-b82a4ec3c2bf"/> | <img width="120px" src="https://github.com/user-attachments/assets/fb48ce9d-574b-4b9d-be3b-a0109d054982"/> |
 | [@hyunn522](https://github.com/hyunn522) | [@ChatHongPT](https://github.com/ChatHongPT) | [@yunkihong-dev](https://github.com/yunkihong-dev) |
 
 ## 📁 테이블 구조
