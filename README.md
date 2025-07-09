@@ -1,10 +1,13 @@
-# SQL-Lab
+# SQL-Query Project
 
-MySQL과 Oracle의 문법 실습을 위한 예제 스크립트이다.
+MySQL과 Oracle의 문법 실습을 위한 팀 프로젝트입니다.
 
-`01.emp_dept_mysql.sql`, `01.emp_dept_oracle.sql` : 예제 테이블 생성을 위한 데이터 삽입 스크립트
+## 👥 팀 소개
 
-`01.select_mysql.sql`, `01.select_oracle.sql` : SQL문 예제 
+| 정서현 | 최홍석 | 홍윤기 |
+| :---: | :---: | :---: |
+| <img width="160px" src="https://github.com/user-attachments/assets/5ab2d270-ed42-4a31-8d07-9d14ecf6c98d"/>   | <img width="160px" src="https://github.com/user-attachments/assets/86fe4892-da4d-474d-b793-c89f4756b0f6"/> | <img width="160px" src="https://github.com/user-attachments/assets/8a15a7e7-6fff-45f3-903d-b82a4ec3c2bf"/> | <img width="160px" src="https://github.com/user-attachments/assets/029daed9-0514-45ed-98ed-ed4ec8b3384d"/> |
+| [@hyunn522](https://github.com/hyunn522) | [@ChatHongPT](https://github.com/ChatHongPT) | [@yunkihong-dev](https://github.com/yunkihong-dev) |
 
 ## 📁 예제 테이블 구조
 
@@ -12,9 +15,9 @@ MySQL과 Oracle의 문법 실습을 위한 예제 스크립트이다.
 
 ## ❓ 추가한 문제
 
-아래 문제들에 대한 답은 Oracle 기준이다.
+아래 문제들에 대한 답은 Oracle 기준입니다.
 
-> 💡 emp 테이블과 dept 테이블 간의 관계를 이용한 다음 SQL문을 통해, 전체 데이터의 양상을 파악한다.
+> 💡 emp 테이블과 dept 테이블 간의 관계를 이용한 다음 SQL문을 통해, 전체 데이터의 양상을 파악합니다.
 > ```
 > SELECT * FROM emp e JOIN dept d ON d.deptno = e.deptno;
 > ```
