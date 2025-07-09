@@ -47,6 +47,8 @@ select ename ,(
     ) as 급여 from emp;
 ```
 
+> 💡 CASE 문은 숫자 범위를 기준으로 등급을 나누거나, 텍스트 값을 조건에 따라 출력할 때 사용됩니다.
+
 ✔️ 결과
 
 ![image](https://github.com/user-attachments/assets/209c0b5a-66fd-4d3a-8b01-633ecd4944c3)
@@ -58,6 +60,10 @@ SELECT e.ename AS "사원 이름", g.ename AS "상사 이름"
   FROM emp e
     JOIN emp g ON e.mgr= g.empno;
 ```
+
+> JOIN은 두 개 이상의 테이블을 연결해서 조회할 때 사용됩니다.
+> 
+> ON 절에서 **공통된 컬럼(주로 외래키)**을 기준으로 테이블을 결합합니다.
 
 ✔️ 결과
 
@@ -82,7 +88,7 @@ SELECT  d.DNAME "부서 명" ,AVG(sal * 12) AS "평균 연봉"
 SELECT TO_CHAR(hiredate,'YYYY') FROM emp;
 ```
 
-`TO_CHAR(date, 'YYYY')`를 통해 Date 타입에서 연도만을 추출할 수 있다.
+> `TO_CHAR(date, 'YYYY')`를 통해 Date 타입에서 연도만을 추출할 수 있다.
 
 ```
 SELECT TO_CHAR(hiredate,'YYYY') AS "입사 연도", avg(sal * 12) AS "평균 연봉"
