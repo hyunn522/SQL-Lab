@@ -24,8 +24,6 @@ SQL문에서 기본적으로 사용되는 `SELECT`, `WHERE`, `ORDER BY` 절에 �
 > SELECT * FROM emp e JOIN dept d ON d.deptno = e.deptno;
 > ```
 
-![image](https://github.com/user-attachments/assets/16df4a3d-6226-4f73-b959-9e309162e99b)
-
 #### Q1. 급여에 따라 다음과 같이 등급을 나누어 조회하기
 
 > 3000 이상: 'A'
